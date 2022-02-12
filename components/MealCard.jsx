@@ -10,6 +10,7 @@ function MealCard({ meal }) {
     >
       <div className="relative h-[240px] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10">
         <Image
+          loading="lazy"
           height="400px"
           width="400px"
           className="h-full w-full"

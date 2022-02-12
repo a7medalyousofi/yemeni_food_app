@@ -38,10 +38,12 @@ const MealWidget = ({ categories, slug }) => {
             <div className="group flex items-center gap-5" key={meal.title}>
               <div className="h-14 w-14 overflow-hidden rounded-lg group-hover:shadow-lg group-hover:shadow-gray-300/20">
                 <Image
+                  loading="lazy"
                   height={56}
                   width={56}
                   className="h-full w-full"
                   src={meal.image.url}
+                  alt={meal.title}
                 />
               </div>
               <div className="flex flex-col">

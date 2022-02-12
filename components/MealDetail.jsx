@@ -45,6 +45,7 @@ const MealDetail = ({ meal }) => {
       case 'image':
         return (
           <Image
+            loading="lazy"
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -64,6 +65,7 @@ const MealDetail = ({ meal }) => {
     >
       <div className="relative h-[150px] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10 lg:h-[400px]">
         <Image
+          loading="lazy"
           height="510px"
           width="1000px"
           className="h-full w-full"
