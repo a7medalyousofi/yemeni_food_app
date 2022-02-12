@@ -5,7 +5,6 @@ import { getCategories, getCategoryMeal } from '../../services'
 import { MealCard, Categories, Loader } from '../../components'
 
 const CategoryPost = ({ meals }) => {
-  console.log('meals', meals)
   const router = useRouter()
 
   if (router.isFallback) {
@@ -19,7 +18,7 @@ const CategoryPost = ({ meals }) => {
           <div className="col-span-1 lg:col-span-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               {meals.map((meal, index) => (
-                <MealCard key={index} meal={meal.node} />
+                <MealCard key={`00_${index}`} meal={meal.node} />
               ))}
             </div>
           </div>

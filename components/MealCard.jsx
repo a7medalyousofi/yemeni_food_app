@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function MealCard({ meal }) {
   return (
@@ -8,7 +9,14 @@ function MealCard({ meal }) {
       key={meal.title}
     >
       <div className="relative h-[240px] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10">
-        <img className="h-full w-full" src={meal.image.url} alt={meal.title} />
+        <Image
+          height="400px"
+          width="400px"
+          className="h-full w-full"
+          src={`${meal.image.url}`}
+          alt={meal.title}
+        />
+
         {meal.categories.length >= 1 && (
           <div className="absolute bottom-4 right-4 flex gap-2">
             {meal.categories.map((category) => (

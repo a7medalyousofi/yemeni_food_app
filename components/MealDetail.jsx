@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const MealDetail = ({ meal }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -43,7 +44,7 @@ const MealDetail = ({ meal }) => {
         )
       case 'image':
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -61,8 +62,14 @@ const MealDetail = ({ meal }) => {
       className="group space-y-5 rounded-xl border border-gray-100 bg-white p-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300/20"
       key={meal.title}
     >
-      <div className="relative h-[300] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10 lg:h-[400px]">
-        <img className="h-full w-full" src={meal.image.url} alt={meal.title} />
+      <div className="relative h-[150px] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10 lg:h-[400px]">
+        <Image
+          height="510px"
+          width="1000px"
+          className="h-full w-full"
+          src={meal.image.url}
+          alt={meal.title}
+        />
         {meal.categories.length >= 1 && (
           <div className="absolute bottom-4 right-4 flex gap-2">
             {meal.categories.map((category) => (

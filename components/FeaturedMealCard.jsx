@@ -11,7 +11,7 @@ const FeaturedMealCard = ({ meal }) => (
       <div className="absolute h-72 w-full rounded-lg bg-gradient-to-b from-gray-400 via-gray-700 to-black bg-center opacity-50"></div>
       <div className="absolute flex h-full w-full flex-col items-center justify-center rounded-lg p-8">
         <p className="text-shadow mb-4 text-xs font-semibold text-white">
-          {moment(meal.createdAt).format('MMM DD, YYYY')}
+          {moment(meal.createdAt).format('MM / DD / YYYY')}
         </p>
         <p className="text-shadow p-4 text-center text-2xl font-semibold text-white">
           {meal.title}

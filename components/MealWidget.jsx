@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getRecentMeals, getRelatedMeals } from '../services'
 import moment from 'moment'
 import Skeleton from 'react-loading-skeleton'
@@ -36,7 +37,12 @@ const MealWidget = ({ categories, slug }) => {
           meals.map((meal) => (
             <div className="group flex items-center gap-5" key={meal.title}>
               <div className="h-14 w-14 overflow-hidden rounded-lg group-hover:shadow-lg group-hover:shadow-gray-300/20">
-                <img className="h-full w-full" src={meal.image.url} />
+                <Image
+                  height={56}
+                  width={56}
+                  className="h-full w-full"
+                  src={meal.image.url}
+                />
               </div>
               <div className="flex flex-col">
                 <p className="mt-1 text-xs text-gray-400">
@@ -53,7 +59,7 @@ const MealWidget = ({ categories, slug }) => {
             </div>
           ))
         ) : (
-          <p className='text-sm'>لا يتوفر وجبات من نفس الصنف حالياً</p>
+          <p className="text-sm">لا يتوفر وجبات من نفس الصنف حالياً</p>
         )}
       </div>
     </div>
