@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div className="border-b border-gray-100 bg-white">
-      <div className="container mx-auto flex items-center justify-between p-4">
+      <div className="container mx-auto flex flex-col items-center justify-between space-y-4 p-4 md:flex-row md:space-y-0">
         <Link href="/">
           <h2
             className="cursor-pointer font-bold text-orange-600"
@@ -20,10 +20,10 @@ function Header() {
             المطبخ اليمني
           </h2>
         </Link>
-        <ul className="flex items-center space-x-4 space-x-reverse">
+        <ul className="flex flex-wrap items-center justify-center space-x-4 space-x-reverse">
           {categories.map((category) => (
             <li
-              className="cursor-pointer text-sm font-semibold text-gray-500 hover:text-orange-600"
+              className="cursor-pointer pb-4 text-sm font-semibold text-gray-500 hover:text-orange-600 md:pb-0"
               key={category.slug}
             >
               <Link href={`/category/${category.slug}`}>{category.name}</Link>
