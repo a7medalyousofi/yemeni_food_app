@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  direction: rtl;
+}
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  @apply bg-slate-50;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply text-orange-600;
+}
+.swiper-pagination-bullet {
+  @apply !h-1 !w-6 !rounded-xl !bg-orange-600;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-orange-600;
+}
