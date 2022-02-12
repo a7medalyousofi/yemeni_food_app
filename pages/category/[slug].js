@@ -13,18 +13,20 @@ const CategoryPost = ({ meals }) => {
   }
 
   return (
-    <div className="container mx-auto mb-8 py-10">
-      <div className="grid grid-cols-1 gap-10 px-4 lg:grid-cols-12">
-        <div className="col-span-1 lg:col-span-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {meals.map((meal, index) => (
-              <MealCard key={index} meal={meal.node} />
-            ))}
+    <div className="border-y border-gray-100 bg-white">
+      <div className="container mx-auto mb-8 py-10 ">
+        <div className="grid grid-cols-1 gap-10 px-4 lg:grid-cols-12">
+          <div className="col-span-1 lg:col-span-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              {meals.map((meal, index) => (
+                <MealCard key={index} meal={meal.node} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="col-span-1 lg:col-span-4">
-          <div className="relative top-8 lg:sticky">
-            <Categories />
+          <div className="col-span-1 lg:col-span-4">
+            <div className="relative top-8 lg:sticky">
+              <Categories />
+            </div>
           </div>
         </div>
       </div>
