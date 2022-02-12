@@ -13,7 +13,7 @@ const FeaturedMealCard = ({ meal }) => (
       alt={meal.title}
       className="h-full w-full object-cover"
     />
-    <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-black/50 bg-center p-8  text-center text-xs leading-4 text-white">
+    <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-orange-800/30 bg-center p-8  text-center text-xs leading-4 text-white">
       <p className="text-shadow mb-4 text-xs font-semibold text-white">
         {moment(meal.createdAt).format('MM / DD / YYYY')}
       </p>

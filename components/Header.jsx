@@ -10,7 +10,7 @@ function Header() {
   }, [])
 
   return (
-    <div className="border-b border-gray-100 bg-white">
+    <div className="border-b border-gray-200 bg-white">
       <div className="container mx-auto flex flex-col items-center justify-between space-y-4 p-4 md:flex-row md:space-y-0">
         <Link href="/">
           <h2

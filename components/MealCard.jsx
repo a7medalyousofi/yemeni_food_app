@@ -5,7 +5,7 @@ import Image from 'next/image'
 function MealCard({ meal }) {
   return (
     <div
-      className="group cursor-pointer space-y-5 rounded-xl border border-gray-100 bg-white p-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300/20"
+      className="group cursor-pointer space-y-5 rounded-xl border border-gray-200 bg-white p-4 transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-300/20"
       key={meal.title}
     >
       <div className="relative h-[240px] w-full overflow-hidden rounded-lg transition duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-400/10">

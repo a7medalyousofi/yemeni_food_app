@@ -107,7 +107,7 @@ export const getRelatedMeals = async (categories, slug) => {
 export const getCategories = async () => {
   const query = gql`
     query GetCategoies {
-      categories {
+      categories(orderBy: createdAt_DESC) {
         name
         slug
       }

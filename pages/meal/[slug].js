@@ -9,7 +9,7 @@ const MealDetails = ({ meal }) => {
     return <Loader />
   }
   return (
-    <div className="border-y border-gray-100 bg-white">
+    <div className="border-y border-gray-200 bg-white">
       {/* <Head>
         <title>المطبخ اليمني</title> اسم الوجبه جمب المطبخ اليمني
         <link rel="icon" href="/favicon.ico" />
