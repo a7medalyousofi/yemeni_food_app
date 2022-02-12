@@ -10,6 +10,10 @@ export default function Home({ meals }) {
     <div className="space-y-2">
       <Head>
         <title>المطبخ اليمني</title>
+        <meta
+          name="description"
+          content="جميع المأكولات، الوجبات، الحلويات اليمنية وطرق تحضيرها"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="border-y border-gray-100 bg-white">
