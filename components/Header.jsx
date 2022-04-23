@@ -14,7 +14,7 @@ function Header() {
       <div className="container mx-auto flex flex-col items-center justify-between space-y-4 p-4 md:flex-row md:space-y-0">
         <Link href="/" className="cursor-pointer">
           <img
-            src="/Logo.svg"
+            src="/logo.svg"
             className="h-[48px]"
             alt="لوجو موقع المطبخ اليمني"
           />
