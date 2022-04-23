@@ -12,13 +12,12 @@ function Header() {
   return (
     <div className="border-b border-gray-200 bg-white">
       <div className="container mx-auto flex flex-col items-center justify-between space-y-4 p-4 md:flex-row md:space-y-0">
-        <Link href="/">
-          <h2
-            className="cursor-pointer font-bold text-orange-600"
-            title="الصفحة الرئيسية"
-          >
-            المطبخ اليمني
-          </h2>
+        <Link href="/" className="cursor-pointer">
+          <img
+            src="/Logo.svg"
+            className="h-[48px]"
+            alt="لوجو موقع المطبخ اليمني"
+          />
         </Link>
         <ul className="flex flex-wrap items-center justify-center space-x-4 space-x-reverse">
           {categories.map((category) => (
